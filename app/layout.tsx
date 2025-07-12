@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import type { ReactNode } from "react";
-import Analytics from "@/app/lib/Analytics";
+import Analytics from "@/app/lib/analytics/Analytics";
 
 const nunito = Nunito({
   subsets: ["latin"],
