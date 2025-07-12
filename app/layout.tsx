@@ -1,26 +1,24 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "./globals.css";
 import type { ReactNode } from "react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const nunito = Nunito({
+  subsets: ['latin'],
+  weight: ['400', '700']
 });
 
 export const viewport: Viewport = {
-  themeColor: '#000',
+  themeColor: [
+    { media: "(prefers-color-scheme: dark)", color: "#181818" },
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" }
+  ],
   colorScheme: 'dark',
 }
 
 export const metadata: Metadata = {
   title: 'PanSzelescik',
-  description: 'Fullstack developer from Poland',
+  description: 'Developer from Poland',
 };
 
 export default function RootLayout({
@@ -31,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${nunito.className} antialiased`}
       >
         {children}
       </body>
