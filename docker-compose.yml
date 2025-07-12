@@ -1,0 +1,13 @@
+services:
+  panszelescik:
+    container_name: panszelescik
+    build:
+      dockerfile: ./Dockerfile
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    networks:
+      - panszelescik_network
+networks:
+  panszelescik_network:
+    external: true
