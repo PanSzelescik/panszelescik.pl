@@ -10,4 +10,4 @@ services:
       - panszelescik_network
 networks:
   panszelescik_network:
-    external: true
+    driver: bridge
