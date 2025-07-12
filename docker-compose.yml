@@ -3,6 +3,10 @@ services:
     container_name: panszelescik
     build:
       dockerfile: ./Dockerfile
+      args:
+        NEXT_PUBLIC_BASE_URL: ${NEXT_PUBLIC_BASE_URL}
+        NEXT_PUBLIC_GA_ID: ${NEXT_PUBLIC_GA_ID}
+        NEXT_PUBLIC_CLARITY_ID: ${NEXT_PUBLIC_CLARITY_ID}
     restart: unless-stopped
     env_file:
       - .env
