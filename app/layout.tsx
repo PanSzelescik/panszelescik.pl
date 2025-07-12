@@ -2,24 +2,24 @@ import type { Metadata, Viewport } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import type { ReactNode } from "react";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Analytics from "@/app/lib/Analytics";
 
 const nunito = Nunito({
-  subsets: ['latin'],
-  weight: ['400', '700']
+  subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 export const viewport: Viewport = {
   themeColor: [
     { media: "(prefers-color-scheme: dark)", color: "#181818" },
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" }
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
   ],
-  colorScheme: 'dark',
-}
+  colorScheme: "dark",
+};
 
 export const metadata: Metadata = {
-  title: 'PanSzelescik',
-  description: 'Developer from Poland',
+  title: "PanSzelescik",
+  description: "Developer from Poland",
 };
 
 export default function RootLayout({
@@ -29,11 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body
-        className={`${nunito.className} antialiased`}
-      >
+      <body className={`${nunito.className} antialiased`}>
         {children}
-        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
+        <Analytics />
       </body>
     </html>
   );
