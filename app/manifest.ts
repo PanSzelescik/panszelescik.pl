@@ -9,6 +9,9 @@ export default function manifest(): MetadataRoute.Manifest {
     display: "standalone",
     background_color: "#000",
     theme_color: "#000",
+    dir: "ltr",
+    lang: "pl",
+    prefer_related_applications: false,
     icons: [
       {
         src: "/favicon.ico",
