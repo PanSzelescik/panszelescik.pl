@@ -12,7 +12,7 @@ WORKDIR /app
 COPY package.json pnpm-lock.yaml ./
 RUN corepack enable pnpm && pnpm i
 
-COPY tsconfig.json postcss.config.mjs next.config.js ./
+COPY tsconfig.json postcss.config.mjs next.config.ts ./
 COPY public ./public
 COPY app ./app
 
