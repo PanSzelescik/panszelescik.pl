@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import type { ReactNode } from "react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const nunito = Nunito({
   subsets: ['latin'],
@@ -32,6 +33,7 @@ export default function RootLayout({
         className={`${nunito.className} antialiased`}
       >
         {children}
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
       </body>
     </html>
   );
