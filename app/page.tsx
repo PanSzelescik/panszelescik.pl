@@ -9,7 +9,7 @@ export default function Home() {
           alt="PanSzelescik"
           width={256}
           height={256}
-          priority={true}
+          priority
         />
         <div className="flex flex-col items-center sm:items-start">
           <h1 className="text-4xl font-bold">PanSzelescik</h1>

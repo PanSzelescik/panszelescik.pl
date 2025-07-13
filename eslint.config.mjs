@@ -1,5 +1,6 @@
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import { defineConfig } from "eslint/config";
 import { FlatCompat } from "@eslint/eslintrc";
 import eslintConfigPrettier from "eslint-config-prettier/flat";
 
@@ -10,9 +11,20 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = [
-  ...compat.extends("airbnb", "airbnb/hooks", "next/core-web-vitals", "next/typescript"),
+export default defineConfig([
+  ...compat.extends(
+    "next/core-web-vitals",
+    "next/typescript",
+  ),
   eslintConfigPrettier,
-];
-
-export default eslintConfig;
+  {
+    rules: {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          extensions: [".tsx"],
+        },
+      ],
+    },
+  },
+]);
