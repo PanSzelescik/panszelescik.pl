@@ -33,6 +33,7 @@ services:
       - ../seq:/data
     environment:
       - ACCEPT_EULA=Y
+      - SEQ_FIRSTRUN_ADMINPASSWORD=zaq1@WSX
     networks:
       - panszelescik_network
 networks:
