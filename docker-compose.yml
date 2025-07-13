@@ -9,6 +9,7 @@ services:
         NEXT_PUBLIC_CLARITY_ID: ${NEXT_PUBLIC_CLARITY_ID}
         OTEL_EXPORTER_OTLP_ENDPOINT: ${OTEL_EXPORTER_OTLP_ENDPOINT}
         OTEL_EXPORTER_OTLP_PROTOCOL: ${OTEL_EXPORTER_OTLP_PROTOCOL}
+        OTEL_LOG_LEVEL: ${OTEL_LOG_LEVEL}
     restart: unless-stopped
     depends_on:
       - seq
