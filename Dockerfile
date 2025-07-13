@@ -5,12 +5,12 @@ ENV TZ=Europe/Warsaw
 # Step 1. Rebuild the source code only when needed
 FROM base AS builder
 
-RUN apk add --no-cache libc6-compat && corepack enable pnpm
+RUN apk add --no-cache libc6-compat
 
 WORKDIR /app
 
 COPY package.json pnpm-lock.yaml ./
-RUN pnpm i
+RUN corepack enable pnpm && pnpm i --frozen-lockfile --prod
 
 COPY tsconfig.json postcss.config.mjs next.config.ts ./
 COPY public ./public
