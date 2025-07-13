@@ -24,10 +24,12 @@
     "@opentelemetry/sdk-trace-node": "^2.0.1",
     "@opentelemetry/semantic-conventions": "^1.36.0",
     "clsx": "^2.1.1",
+    "import-in-the-middle": "^1.14.2",
     "next": "^15.3.5",
     "nuqs": "^2.4.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "require-in-the-middle": "^7.5.2",
     "zod": "^4.0.5"
   },
   "devDependencies": {
