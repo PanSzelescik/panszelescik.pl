@@ -10,9 +10,9 @@ RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
 COPY package.json pnpm-lock.yaml ./
-RUN corepack enable pnpm && pnpm i --frozen-lockfile --prod
+RUN corepack enable pnpm && pnpm i --frozen-lockfile
 
-COPY tsconfig.json postcss.config.mjs next.config.ts ./
+COPY tsconfig.json postcss.config.mjs next.config.ts instrumentation.ts ./
 COPY public ./public
 COPY app ./app
 
