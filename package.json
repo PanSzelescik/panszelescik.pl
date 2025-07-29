@@ -19,7 +19,7 @@
     "nuqs": "^2.4.3",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "zod": "^4.0.10"
+    "zod": "^4.0.13"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
