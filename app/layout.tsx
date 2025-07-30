@@ -11,8 +11,8 @@ const nunito = Nunito({
 
 export const viewport: Viewport = {
   themeColor: [
-    { media: "(prefers-color-scheme: dark)", color: "#181818" },
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#171717" },
+    { media: "(prefers-color-scheme: light)", color: "#E5E5E5" },
   ],
   colorScheme: "dark",
 };
@@ -67,7 +67,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={`${nunito.className} antialiased`}>
+      <body className={`${nunito.className} antialiased transition-colors`}>
         {children}
         <Analytics />
       </body>

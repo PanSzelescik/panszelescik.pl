@@ -10,6 +10,7 @@ export default function Home() {
           width={256}
           height={256}
           priority
+          fetchPriority={"high"}
         />
         <div className="flex flex-col items-center sm:items-start">
           <h1 className="text-4xl font-bold">PanSzelescik</h1>

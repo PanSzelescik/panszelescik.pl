@@ -9,6 +9,11 @@ const nextConfig: NextConfig = {
       exclude: ["error"],
     },
   },
+  experimental: {
+    serverActions: {
+      allowedOrigins: ["panszelescik.pl"],
+    },
+  }
 };
 
 const withBundleAnalyzer = bundleAnalyzer({
