@@ -5,7 +5,7 @@ export default function Home() {
     <div className="grid min-h-dvh items-center justify-items-center">
       <main className="flex flex-col items-center gap-8 sm:flex-row">
         <Image
-          src="/icon.png"
+          src="/icon0.svg"
           alt="PanSzelescik"
           width={256}
           height={256}

@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import { Nunito } from "next/font/google";
 import type { ReactNode } from "react";
 import Analytics from "@/app/lib/analytics/Analytics";
+import Script from "next/script";
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -67,8 +68,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
+    <head>
+      <meta name="apple-mobile-web-app-title" content="PanSzelescik" />
+    </head>
       <body className={`${nunito.className} antialiased transition-colors motion-reduce:transition-none`}>
         {children}
+        <Script src="/sw-registration.js" />
         <Analytics />
       </body>
     </html>
