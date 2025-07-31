@@ -67,7 +67,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={`${nunito.className} antialiased transition-colors`}>
+      <body className={`${nunito.className} antialiased transition-colors motion-reduce:transition-none`}>
         {children}
         <Analytics />
       </body>
