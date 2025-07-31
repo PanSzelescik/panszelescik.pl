@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid min-h-screen items-center justify-items-center">
+    <div className="grid min-h-dvh items-center justify-items-center">
       <main className="flex flex-col items-center gap-8 sm:flex-row">
         <Image
           src="/icon.png"
