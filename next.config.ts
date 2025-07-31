@@ -13,7 +13,8 @@ const nextConfig: NextConfig = {
     serverActions: {
       allowedOrigins: ["panszelescik.pl"],
     },
-  }
+  },
+  allowedDevOrigins: ["panszelescik.pl", "192.168.1.100"],
 };
 
 const withBundleAnalyzer = bundleAnalyzer({
