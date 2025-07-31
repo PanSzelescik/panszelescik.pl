@@ -1,6 +1,6 @@
 // https://raw.githubusercontent.com/DannyMoerkerke/basic-service-worker/refs/heads/main/service-worker.js
 // service worker version number
-const SW_VERSION = 3;
+const SW_VERSION = 4;
 const IDB_VERSION = 1;
 
 // cache name including version number
@@ -291,13 +291,13 @@ const cleanRedirect = async (response) => {
 const fetchHandler = async (e) => {
   const { request } = e;
 
+  if (excludedFiles.includes(request.url.replace(self.location.origin, ""))) {
+    return;
+  }
+
   e.respondWith(
     (async () => {
       try {
-        if (excludedFiles.includes(request.url.replace(self.location.origin, ""))) {
-          return fetch(request);
-        }
-
         // store requests to IndexedDB that are eligible for retry when offline and return the offline page
         // as response so no error is logged
         if (isOffline() && isRequestEligibleForRetry(request)) {
