@@ -1,6 +1,6 @@
 // https://raw.githubusercontent.com/DannyMoerkerke/basic-service-worker/refs/heads/main/service-worker.js
 // service worker version number
-const SW_VERSION = 1;
+const SW_VERSION = 2;
 const IDB_VERSION = 1;
 
 // cache name including version number
