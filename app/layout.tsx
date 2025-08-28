@@ -5,6 +5,8 @@ import type { ReactNode } from "react";
 import Analytics from "@/app/lib/analytics/Analytics";
 import Script from "next/script";
 
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL!;
+
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["400", "700"],
@@ -19,6 +21,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "PanSzelescik",
   description: "Developer from Poland",
   authors: [
@@ -29,13 +32,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PanSzelescik",
     description: "Developer from Poland",
-    url: process.env.NEXT_PUBLIC_BASE_URL,
+    url: baseUrl,
     siteName: "PanSzelescik.pl",
     locale: "pl_PL",
     type: "website",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/icon.png`,
+        url: `${baseUrl}/icon.png`,
         width: 1200,
         height: 1200,
         alt: "PanSzelescik",
@@ -52,7 +55,7 @@ export const metadata: Metadata = {
     description: "Developer from Poland",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/icon.png`,
+        url: `${baseUrl}/icon.png`,
         width: 1200,
         height: 1200,
         alt: "PanSzelescik",
