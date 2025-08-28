@@ -9,6 +9,7 @@
         "directory": ".open-next/assets",
         "binding": "ASSETS"
     },
+    "workers_dev": false,
     "routes": [
         {
             "pattern": "panszelescik.pl",
