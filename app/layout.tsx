@@ -71,10 +71,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-    <head>
-      <meta name="apple-mobile-web-app-title" content="PanSzelescik" />
-    </head>
-      <body className={`${nunito.className} antialiased transition-colors motion-reduce:transition-none`}>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="PanSzelescik" />
+      </head>
+      <body
+        className={`${nunito.className} antialiased transition-colors motion-reduce:transition-none`}
+      >
         {children}
         <Script src="/sw-registration.js" />
         <Analytics />
