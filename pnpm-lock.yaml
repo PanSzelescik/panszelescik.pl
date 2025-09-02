@@ -12,8 +12,8 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0(react@19.1.1)
       '@hugerte/hugerte-react':
-        specifier: ^2.0.1
-        version: 2.0.1(hugerte@1.0.9)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
+        specifier: ^2.0.2
+        version: 2.0.2(hugerte@1.0.9)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       '@microsoft/clarity':
         specifier: ^1.0.0
         version: 1.0.0
@@ -150,13 +150,13 @@ packages:
     peerDependencies:
       react: '>= 16 || ^19.0.0-rc'
 
-  '@hugerte/framework-integration-shared@1.0.1':
-    resolution: {integrity: sha512-78TJ8OwnwAD+/C6xcxW2wqNMJ0juQK45bcgx9EpJZCO7Ddy5Hx8HamMlfttjvL1ApErv1FuRdrbhMyBqCxjC/Q==}
+  '@hugerte/framework-integration-shared@1.2.0':
+    resolution: {integrity: sha512-ogcvVO0dFcb/HQAY7itj8xnmeMcHZmtMaOj9uC34ZYopnvj12TGWnfRQwbt8jZMlmoZk2z1TTLmJgvQBuH013A==}
     peerDependencies:
       hugerte: ^1.0.4
 
-  '@hugerte/hugerte-react@2.0.1':
-    resolution: {integrity: sha512-jkrkJqkg5ZkOpg1RWef1pmaZvkO1H6aNPjCa291Kd1/CgWOccP72kS8o8NfAcslZndyTq50O4KH3KFDvAnCG+g==}
+  '@hugerte/hugerte-react@2.0.2':
+    resolution: {integrity: sha512-vIVEX2mpxX/Vl9pvzhOd4bKEktS2sSOrd8smS6lIqgqETsuWTfLbjvXWni99i2a+VEMfWvK+nLqP8AmYhcELBQ==}
     peerDependencies:
       hugerte: ^1.0.6
       react: ^19.0.0 || ^18.0.0 || ^17.0.1 || ^16.7.0
@@ -2114,13 +2114,13 @@ snapshots:
     dependencies:
       react: 19.1.1
 
-  '@hugerte/framework-integration-shared@1.0.1(hugerte@1.0.9)':
+  '@hugerte/framework-integration-shared@1.2.0(hugerte@1.0.9)':
     dependencies:
       hugerte: 1.0.9
 
-  '@hugerte/hugerte-react@2.0.1(hugerte@1.0.9)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
+  '@hugerte/hugerte-react@2.0.2(hugerte@1.0.9)(react-dom@19.1.1(react@19.1.1))(react@19.1.1)':
     dependencies:
-      '@hugerte/framework-integration-shared': 1.0.1(hugerte@1.0.9)
+      '@hugerte/framework-integration-shared': 1.2.0(hugerte@1.0.9)
       react: 19.1.1
       react-dom: 19.1.1(react@19.1.1)
     optionalDependencies:
