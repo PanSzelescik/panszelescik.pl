@@ -1,6 +1,6 @@
 {
     "main": ".open-next/worker.js",
-    "name": "panszelescik",
+    "name": "my-app",
     "compatibility_date": "2025-08-28",
     "compatibility_flags": [
         "nodejs_compat"
