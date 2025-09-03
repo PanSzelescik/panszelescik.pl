@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
     },
   },
   experimental: {
+    inlineCss: true,
     serverActions: {
       allowedOrigins: ["panszelescik.pl"],
     },
