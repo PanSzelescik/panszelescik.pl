@@ -1,0 +1,26 @@
+{
+    "main": ".open-next/worker.js",
+    "name": "panszelescik",
+    "compatibility_date": "2025-08-28",
+    "compatibility_flags": [
+        "nodejs_compat"
+    ],
+    "assets": {
+        "directory": ".open-next/assets",
+        "binding": "ASSETS"
+    },
+    "workers_dev": false,
+    "routes": [
+        {
+            "pattern": "panszelescik.pl",
+            "custom_domain": true
+        }
+    ],
+    "observability": {
+        "enabled": true,
+        "head_sampling_rate": 1
+    },
+    "placement": {
+        "mode": "smart"
+    }
+}

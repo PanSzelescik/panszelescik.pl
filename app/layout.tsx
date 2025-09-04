@@ -4,6 +4,9 @@ import { Nunito } from "next/font/google";
 import type { ReactNode } from "react";
 import Analytics from "@/app/lib/analytics/Analytics";
 import Script from "next/script";
+import NextTopLoader from "nextjs-toploader";
+
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL!;
 
 const nunito = Nunito({
   subsets: ["latin"],
@@ -19,6 +22,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL(baseUrl),
   title: "PanSzelescik",
   description: "Developer from Poland",
   authors: [
@@ -29,13 +33,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PanSzelescik",
     description: "Developer from Poland",
-    url: process.env.NEXT_PUBLIC_BASE_URL,
+    url: baseUrl,
     siteName: "PanSzelescik.pl",
     locale: "pl_PL",
     type: "website",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/icon.png`,
+        url: `${baseUrl}/icon.png`,
         width: 1200,
         height: 1200,
         alt: "PanSzelescik",
@@ -52,7 +56,7 @@ export const metadata: Metadata = {
     description: "Developer from Poland",
     images: [
       {
-        url: `${process.env.NEXT_PUBLIC_BASE_URL}/icon.png`,
+        url: `${baseUrl}/icon.png`,
         width: 1200,
         height: 1200,
         alt: "PanSzelescik",
@@ -68,10 +72,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-    <head>
-      <meta name="apple-mobile-web-app-title" content="PanSzelescik" />
-    </head>
-      <body className={`${nunito.className} antialiased transition-colors motion-reduce:transition-none`}>
+      <head>
+        <meta name="apple-mobile-web-app-title" content="PanSzelescik" />
+      </head>
+      <body
+        className={`${nunito.className} antialiased transition-colors motion-reduce:transition-none`}
+      >
+        <NextTopLoader />
         {children}
         <Script src="/sw-registration.js" />
         <Analytics />
