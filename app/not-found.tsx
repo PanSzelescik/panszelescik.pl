@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 export default function NotFound() {
   return (
     <div className="mx-auto flex min-h-dvh flex-row items-center justify-center gap-4">
