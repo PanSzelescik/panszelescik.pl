@@ -35,6 +35,13 @@ const nextConfig: NextConfig = {
       ],
     },
   ],
+  redirects: async () => [
+    {
+      source: "/niedziela-handlowa/:city",
+      destination: "/niedziela-handlowa",
+      statusCode: 301,
+    },
+  ],
 };
 
 const withBundleAnalyzer = bundleAnalyzer({

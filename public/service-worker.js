@@ -1,12 +1,15 @@
 // https://raw.githubusercontent.com/DannyMoerkerke/basic-service-worker/refs/heads/main/service-worker.js
 // service worker version number
-const SW_VERSION = 17;
+const SW_VERSION = 18;
 const IDB_VERSION = 1;
 
 // cache name including version number
 const cacheName = `panszelescik-${SW_VERSION}`;
 
-const excludedFiles = ["https://www.googletagmanager.com/gtag/js?id=G-GM8C48X9PY", "https://www.clarity.ms/tag/99gjv8ocjj?ref=npm"];
+const excludedFiles = [
+  "https://www.googletagmanager.com/gtag/js?id=G-GM8C48X9PY",
+  "https://www.clarity.ms/tag/99gjv8ocjj?ref=npm",
+];
 
 const offlineRoute = "/";
 
