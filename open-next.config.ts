@@ -4,6 +4,10 @@ import d1NextTagCache from "@opennextjs/cloudflare/overrides/tag-cache/d1-next-t
 import doQueue from "@opennextjs/cloudflare/overrides/queue/do-queue";
 import { withRegionalCache } from "@opennextjs/cloudflare/overrides/incremental-cache/regional-cache";
 import queueCache from "@opennextjs/cloudflare/overrides/queue/queue-cache";
+import {
+  softTagFilter,
+  withFilter,
+} from "@opennextjs/cloudflare/overrides/tag-cache/tag-cache-filter";
 
 export default defineCloudflareConfig({
   incrementalCache: withRegionalCache(r2IncrementalCache, {
@@ -15,7 +19,10 @@ export default defineCloudflareConfig({
     regionalCacheTtlSec: 5,
     waitForQueueAck: true,
   }),
-  tagCache: d1NextTagCache,
+  tagCache: withFilter({
+    tagCache: d1NextTagCache,
+    filterFn: softTagFilter,
+  }),
   enableCacheInterception: true,
   //cachePurge: purgeCache({ type: "direct" }),
 });
