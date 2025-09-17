@@ -3,13 +3,16 @@ import r2IncrementalCache from "@opennextjs/cloudflare/overrides/incremental-cac
 import d1NextTagCache from "@opennextjs/cloudflare/overrides/tag-cache/d1-next-tag-cache";
 import doQueue from "@opennextjs/cloudflare/overrides/queue/do-queue";
 import { withRegionalCache } from "@opennextjs/cloudflare/overrides/incremental-cache/regional-cache";
+import purgeCache from "@opennextjs/cloudflare/overrides/cache-purge";
 
 export default defineCloudflareConfig({
   incrementalCache: withRegionalCache(r2IncrementalCache, {
     mode: "long-lived",
     shouldLazilyUpdateOnCacheHit: true,
+    bypassTagCacheOnCacheHit: true,
   }),
   queue: doQueue,
   tagCache: d1NextTagCache,
   enableCacheInterception: true,
+  cachePurge: purgeCache({ type: "direct" }),
 });
