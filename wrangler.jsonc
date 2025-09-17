@@ -35,6 +35,12 @@
             "bucket_name": "panszelescik"
         }
     ],
+    "kv_namespaces": [
+        {
+            "binding": "NEXT_INC_CACHE_KV",
+            "id": "panszelescik"
+        }
+    ],
     "durable_objects": {
         "bindings": [
             {
