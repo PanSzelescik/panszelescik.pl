@@ -26,13 +26,13 @@
     "services": [
         {
             "binding": "WORKER_SELF_REFERENCE",
-            "service": "<WORKER_NAME>"
+            "service": "panszelescik"
         }
     ],
     "r2_buckets": [
         {
             "binding": "NEXT_INC_CACHE_R2_BUCKET",
-            "bucket_name": "<BUCKET_NAME>"
+            "bucket_name": "panszelescik"
         }
     ],
     "durable_objects": {
@@ -54,8 +54,8 @@
     "d1_databases": [
         {
             "binding": "NEXT_TAG_CACHE_D1",
-            "database_id": "<DATABASE_ID>",
-            "database_name": "<DATABASE_NAME>"
+            "database_id": "panszelescik",
+            "database_name": "panszelescik"
         }
     ]
 }
