@@ -35,26 +35,10 @@
             "bucket_name": "panszelescik"
         }
     ],
-    "durable_objects": {
-        "bindings": [
-            {
-                "name": "NEXT_CACHE_DO_QUEUE",
-                "class_name": "DOQueueHandler"
-            }
-        ]
-    },
-    "migrations": [
-        {
-            "tag": "v1",
-            "new_sqlite_classes": [
-                "DOQueueHandler"
-            ]
-        }
-    ],
     "d1_databases": [
         {
             "binding": "NEXT_TAG_CACHE_D1",
-            "database_id": "panszelescik",
+            "database_id": "bf157538-286d-4fba-98f5-7ce7c289ca49",
             "database_name": "panszelescik"
         }
     ]
