@@ -16,25 +16,6 @@ const nextConfig: NextConfig = {
     },
   },
   allowedDevOrigins: ["panszelescik.pl", "192.168.1.100"],
-  headers: async () => [
-    {
-      source: "/service-worker.js",
-      headers: [
-        {
-          key: "Content-Type",
-          value: "application/javascript; charset=utf-8",
-        },
-        {
-          key: "Cache-Control",
-          value: "no-cache, no-store, must-revalidate",
-        },
-        {
-          key: "Content-Security-Policy",
-          value: "default-src 'self'; script-src 'self'",
-        },
-      ],
-    },
-  ],
   redirects: async () => [
     {
       source: "/niedziela-handlowa/:city",

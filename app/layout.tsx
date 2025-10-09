@@ -3,7 +3,6 @@ import type { Metadata, Viewport } from "next";
 import { Nunito } from "next/font/google";
 import type { ReactNode } from "react";
 import Analytics from "@/app/lib/analytics/Analytics";
-import Script from "next/script";
 import NextTopLoader from "nextjs-toploader";
 import link from "@/app/lib/link";
 
@@ -82,7 +81,6 @@ export default function RootLayout({
       >
         <NextTopLoader />
         {children}
-        <Script src="/sw-registration.js" />
         <Analytics />
       </body>
     </html>
