@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
     serverActions: {
       allowedOrigins: ["panszelescik.pl"],
     },
+    turbopackFileSystemCacheForDev: true,
   },
   allowedDevOrigins: ["panszelescik.pl", "192.168.1.100"],
   redirects: async () => [
