@@ -16,7 +16,7 @@
   "dependencies": {
     "@microsoft/clarity": "^1.0.0",
     "@next/bundle-analyzer": "^15.5.4",
-    "@next/third-parties": "^15.5.4",
+    "@next/third-parties": "^15.5.5",
     "@opennextjs/cloudflare": "^1.10.1",
     "date-fns-tz": "^3.2.0",
     "next": "^15.5.4",
