@@ -7,6 +7,8 @@ export const dynamic = "force-static";
 export const revalidate = 3600;
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const date = new Date();
+
   return [
     {
       url: link("/"),
@@ -15,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: link("niedziela-handlowa"),
-      lastModified: new Date(),
+      lastModified: date,
       changeFrequency: "daily",
       priority: 1,
     },
