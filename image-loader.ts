@@ -14,7 +14,7 @@ export default function cloudflareLoader({
   if (process.env.NODE_ENV === "development") {
     return src;
   }
-  const params = [`width=${width}`, `quality=${quality || 75}`, "format=auto"];
+  const params = [`width=${width}`, `quality=${quality || 75}`, "format=auto", "onerror=redirect"];
   const paramsString = params.join(",");
   return `/cdn-cgi/image/${paramsString}/${normalizeSrc(src)}`;
 }
