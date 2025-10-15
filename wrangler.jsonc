@@ -3,7 +3,8 @@
     "name": "panszelescik",
     "compatibility_date": "2025-10-15",
     "compatibility_flags": [
-        "nodejs_compat"
+        "nodejs_compat",
+        "global_fetch_strictly_public"
     ],
     "assets": {
         "directory": ".open-next/assets",
