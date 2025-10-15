@@ -7,7 +7,7 @@ export default function Home() {
     <div className="grid min-h-dvh items-center justify-items-center">
       <main className="flex flex-col items-center gap-8 sm:flex-row">
         <Image
-          src="/web-app-manifest-512x512.png"
+          src="/icon.png"
           alt="PanSzelescik"
           width={256}
           height={256}
