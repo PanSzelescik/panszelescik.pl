@@ -4,6 +4,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   output: "standalone",
+  typedRoutes: true,
   compiler: {
     removeConsole: {
       exclude: ["error"],

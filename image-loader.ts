@@ -11,7 +11,7 @@ export default function cloudflareImageLoader({
   src: string;
   width: number;
   quality?: number;
-  format?: "auto" | "avif" | "webp | "jpeg" | "baseline-jpeg" | "json";
+  format?: "auto" | "avif" | "webp" | "jpeg" | "baseline-jpeg" | "json";
 }) {
   if (process.env.NODE_ENV === "development") {
     return src;
