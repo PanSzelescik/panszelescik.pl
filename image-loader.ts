@@ -2,7 +2,7 @@ const normalizeSrc = (src: string) => {
   return src.startsWith("/") ? src.slice(1) : src;
 };
 
-export default function cloudflareLoader({
+export default function cloudflareImageLoader({
   src,
   width,
   quality,
