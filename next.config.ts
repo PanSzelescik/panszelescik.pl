@@ -9,6 +9,10 @@ const nextConfig: NextConfig = {
       exclude: ["error"],
     },
   },
+  images: {
+    loader: "custom",
+    loaderFile: "./image-loader.ts",
+  },
   experimental: {
     inlineCss: true,
     serverActions: {
