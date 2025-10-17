@@ -10,7 +10,7 @@
     "lint": "next lint",
     "workers-build": "opennextjs-cloudflare build",
     "workers-preview": "opennextjs-cloudflare preview",
-    "workers-deploy": "opennextjs-cloudflare deploy",
+    "workers-deploy": "opennextjs-cloudflare deploy && npx wrangler deploy --config ./workers/api/headers/wrangler.jsonc",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {

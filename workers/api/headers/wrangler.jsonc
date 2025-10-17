@@ -1,0 +1,19 @@
+{
+    "main": "./worker.ts",
+    "name": "panszelescik-headers",
+    "compatibility_date": "2025-10-17",
+    "routes": [
+        {
+            "pattern": "panszelescik.pl/api/headers",
+            "zone_name": "panszelescik.pl",
+            "custom_domain": true
+        }
+    ],
+    "observability": {
+        "enabled": true,
+        "head_sampling_rate": 1
+    },
+    "placement": {
+        "mode": "smart"
+    }
+}
