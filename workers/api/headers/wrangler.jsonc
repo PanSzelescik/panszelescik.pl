@@ -1,4 +1,5 @@
 {
+    "$schema": "/node_modules/wrangler/config-schema.json",
     "main": "./worker.ts",
     "name": "panszelescik-headers",
     "compatibility_date": "2025-10-17",
