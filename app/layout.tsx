@@ -90,7 +90,7 @@ export default function RootLayout({
         <NextTopLoader />
         {children}
         <Analytics />
-        <Script src="/sw.js" async={true} fetchPriority="low" />
+        <Script src="/sww.js" async={true} fetchPriority="low" />
       </body>
     </html>
   );
