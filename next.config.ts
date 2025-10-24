@@ -16,7 +16,6 @@ const nextConfig: NextConfig = {
     loaderFile: "./image-loader.ts",
   },
   experimental: {
-    inlineCss: true,
     serverActions: {
       allowedOrigins: ["panszelescik.pl"],
     },
