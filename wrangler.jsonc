@@ -38,6 +38,12 @@
             "bucket_name": "panszelescik"
         }
     ],
+    "kv_namespaces": [
+        {
+            "binding": "NEXT_INC_CACHE_KV",
+            "id": "506aa1a24d7e41cb9ec6ca43bb55153c"
+        }
+    ],
     "durable_objects": {
         "bindings": [
             {
