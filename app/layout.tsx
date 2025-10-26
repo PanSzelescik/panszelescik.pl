@@ -7,7 +7,6 @@ import Analytics from "@/app/lib/analytics/Analytics";
 import NextTopLoader from "nextjs-toploader";
 import link from "@/app/lib/link";
 import cloudflareImageLoader from "@/image-loader";
-import Script from "next/script";
 
 const url = new URL(link("/"));
 const iconUrl = link(
@@ -90,7 +89,6 @@ export default function RootLayout({
         <NextTopLoader />
         {children}
         <Analytics />
-        <Script src="/sww.js" async={true} fetchPriority="low" />
       </body>
     </html>
   );
