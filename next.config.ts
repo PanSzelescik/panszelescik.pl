@@ -1,28 +1,19 @@
 import type { NextConfig } from "next";
-//import bundleAnalyzer from "@next/bundle-analyzer";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   generateEtags: true,
   output: "standalone",
   typedRoutes: true,
-  compiler: {
-    removeConsole: {
-      exclude: ["error"],
-    },
-  },
+  reactCompiler: true,
   images: {
     loader: "custom",
     loaderFile: "./image-loader.ts",
     formats: ['image/avif', 'image/webp'],
   },
   experimental: {
-    serverActions: {
-      allowedOrigins: ["panszelescik.pl"],
-    },
-    reactCompiler: true,
+    turbopackFileSystemCacheForDev: true,
   },
-  allowedDevOrigins: ["panszelescik.pl", "192.168.1.100"],
   redirects: async () => [
     {
       source: "/niedziela-handlowa/:city",
@@ -34,8 +25,3 @@ const nextConfig: NextConfig = {
 
 export default nextConfig;
 
-/*const withBundleAnalyzer = bundleAnalyzer({
-  enabled: process.env.ANALYZE === "true",
-});
-
-export default withBundleAnalyzer(nextConfig);*/
