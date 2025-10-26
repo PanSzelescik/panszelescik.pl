@@ -1,8 +1,8 @@
-diff --git a/node_modules/@opennextjs/aws/dist/core/routing/cacheInterceptor.js b/node_modules/@opennextjs/aws/dist/core/routing/cacheInterceptor.js
-index 48dca6e..40f0bab 100644
---- a/node_modules/@opennextjs/aws/dist/core/routing/cacheInterceptor.js
-+++ b/node_modules/@opennextjs/aws/dist/core/routing/cacheInterceptor.js
-@@ -34,7 +34,7 @@
+diff --git a/dist/core/routing/cacheInterceptor.js b/dist/core/routing/cacheInterceptor.js
+index 48dca6ea702eec62579a02da1088a7beb566bf27..8a6aa26c78768b2a1789cb50dbe60da275e76345 100644
+--- a/dist/core/routing/cacheInterceptor.js
++++ b/dist/core/routing/cacheInterceptor.js
+@@ -34,7 +34,7 @@ async function computeCacheControl(path, body, host, revalidate, lastModified) {
      // calculate age
      const age = Math.round((Date.now() - (lastModified ?? 0)) / 1000);
      const hash = (str) => createHash("md5").update(str).digest("hex");
@@ -11,7 +11,7 @@ index 48dca6e..40f0bab 100644
      if (revalidate === 0) {
          // This one should never happen
          return {
-@@ -190,6 +190,28 @@
+@@ -190,6 +190,28 @@ export async function cacheInterceptor(event) {
                  }
              }
              const host = event.headers.host;

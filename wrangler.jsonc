@@ -2,7 +2,7 @@
     "$schema": "./node_modules/wrangler/config-schema.json",
     "main": ".open-next/worker.js",
     "name": "panszelescik",
-    "compatibility_date": "2025-10-24",
+    "compatibility_date": "2025-10-26",
     "compatibility_flags": [
         "nodejs_compat",
         "global_fetch_strictly_public"
@@ -36,12 +36,6 @@
         {
             "binding": "NEXT_INC_CACHE_R2_BUCKET",
             "bucket_name": "panszelescik"
-        }
-    ],
-    "kv_namespaces": [
-        {
-            "binding": "NEXT_INC_CACHE_KV",
-            "id": "506aa1a24d7e41cb9ec6ca43bb55153c"
         }
     ],
     "durable_objects": {
