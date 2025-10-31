@@ -49,6 +49,14 @@
             {
                 "name": "NEXT_CACHE_DO_QUEUE",
                 "class_name": "DOQueueHandler"
+            },
+            {
+                "name": "NEXT_TAG_CACHE_DO_SHARDED",
+                "class_name": "DOShardedTagCache"
+            },
+            {
+                "name": "NEXT_CACHE_DO_PURGE",
+                "class_name": "BucketCachePurge"
             }
         ]
     },
@@ -56,7 +64,9 @@
         {
             "tag": "v1",
             "new_sqlite_classes": [
-                "DOQueueHandler"
+                "DOQueueHandler",
+                "DOShardedTagCache",
+                "BucketCachePurge"
             ]
         }
     ],
