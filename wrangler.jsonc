@@ -64,7 +64,12 @@
         {
             "tag": "v1",
             "new_sqlite_classes": [
-                "DOQueueHandler",
+                "DOQueueHandler"
+            ]
+        },
+        {
+            "tag": "v2",
+            "new_sqlite_classes": [
                 "DOShardedTagCache",
                 "BucketCachePurge"
             ]
