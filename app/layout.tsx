@@ -19,6 +19,9 @@ const iconUrl = link(
 const nunito = Nunito({
   subsets: ["latin"],
   weight: ["400", "700"],
+  display: "swap",
+  preload: true,
+  fallback: ["system-ui", "arial"],
 });
 
 export const viewport: Viewport = {
