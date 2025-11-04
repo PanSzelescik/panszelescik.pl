@@ -1,4 +1,8 @@
 import type { NextConfig } from "next";
+import {
+  initOpenNextCloudflareForDev,
+  getDeploymentId,
+} from "@opennextjs/cloudflare";
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
@@ -14,6 +18,8 @@ const nextConfig: NextConfig = {
   experimental: {
     turbopackFileSystemCacheForDev: true,
   },
+  bundlePagesRouterDependencies: true,
+  deploymentId: getDeploymentId(),
   redirects: async () => [
     {
       source: "/niedziela-handlowa/:city",
@@ -25,3 +31,4 @@ const nextConfig: NextConfig = {
 
 export default nextConfig;
 
+initOpenNextCloudflareForDev();
