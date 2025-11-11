@@ -1,3 +1,2 @@
 patchedDependencies:
   '@opennextjs/aws@3.8.5': patches/@opennextjs__aws@3.8.5.patch
-  '@opennextjs/cloudflare@1.11.0': patches/@opennextjs__cloudflare@1.11.0.patch

@@ -15,6 +15,7 @@ const nextConfig: NextConfig = {
   experimental: {
     turbopackFileSystemCacheForDev: true,
     optimizePackageImports: ["date-fns-tz"],
+    optimizeServerReact: true,
   },
   bundlePagesRouterDependencies: true,
   redirects: async () => [

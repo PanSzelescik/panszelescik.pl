@@ -2,10 +2,10 @@
   "name": "panszelescik.pl",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@10.18.3+sha512.bbd16e6d7286fd7e01f6b3c0b3c932cda2965c06a908328f74663f10a9aea51f1129eea615134bf992831b009eabe167ecb7008b597f40ff9bc75946aadfb08d",
+  "packageManager": "pnpm@10.21.0+sha512.da3337267e400fdd3d479a6c68079ac6db01d8ca4f67572083e722775a796788a7a9956613749e000fac20d424b594f7a791a5f4e2e13581c5ef947f26968a40",
   "scripts": {
     "dev": "next dev -H 0.0.0.0 --experimental-https",
-    "build": "next build --webpack",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "workers-build": "opennextjs-cloudflare build",
@@ -19,7 +19,7 @@
   "dependencies": {
     "@microsoft/clarity": "^1.0.0",
     "@next/third-parties": "^16.0.1",
-    "@opennextjs/cloudflare": "^1.11.0",
+    "@opennextjs/cloudflare": "^1.12.0",
     "date-fns-tz": "^3.2.0",
     "next": "^16.0.1",
     "nextjs-toploader": "^3.9.17",
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "@next/eslint-plugin-next": "^16.0.1",
-    "@tailwindcss/postcss": "^4.1.16",
+    "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^24.10.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
@@ -41,8 +41,8 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "prettier": "3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.1",
-    "tailwindcss": "^4.1.16",
+    "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
-    "wrangler": "^4.45.4"
+    "wrangler": "^4.46.0"
   }
 }
