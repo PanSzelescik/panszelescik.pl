@@ -1,30 +1,21 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { defineConfig } from "eslint/config";
-import { FlatCompat } from "@eslint/eslintrc";
-import eslintConfigPrettier from "eslint-config-prettier/flat";
+import { defineConfig, globalIgnores } from "eslint/config";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
+import prettier from 'eslint-config-prettier/flat'
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-});
-
-export default defineConfig([
-  ...compat.extends(
-    "next/core-web-vitals",
-    "next/typescript",
-  ),
-  eslintConfigPrettier,
-  {
-    rules: {
-      "react/jsx-filename-extension": [
-        1,
-        {
-          extensions: [".tsx"],
-        },
-      ],
-    },
-  },
+const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTs,
+  prettier,
+  // Override default ignores of eslint-config-next.
+  globalIgnores([
+    // Default ignores of eslint-config-next:
+    ".next/**",
+    "out/**",
+    "build/**",
+    "next-env.d.ts",
+    ".open-next/**",
+  ]),
 ]);
+
+export default eslintConfig;

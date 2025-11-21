@@ -1,2 +1,0 @@
-patchedDependencies:
-  '@opennextjs/aws@3.8.5': patches/@opennextjs__aws@3.8.5.patch
