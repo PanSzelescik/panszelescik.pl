@@ -2,7 +2,7 @@
     "$schema": "./node_modules/wrangler/config-schema.json",
     "main": ".open-next/worker.js",
     "name": "panszelescik",
-    "compatibility_date": "2025-11-21",
+    "compatibility_date": "2025-11-26",
     "compatibility_flags": [
         "nodejs_compat",
         "global_fetch_strictly_public"
@@ -21,12 +21,7 @@
     ],
     "observability": {
         "enabled": true,
-        "head_sampling_rate": 1,
-        "traces": {
-            "enabled": true,
-            "head_sampling_rate": 1
-        }
-
+        "head_sampling_rate": 1
     },
     "placement": {
         "mode": "smart"
