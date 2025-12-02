@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   typedRoutes: true,
   reactCompiler: true,
   images: {
+    loader: "custom",
+    loaderFile: "./image-loader.ts",
     formats: ['image/avif', 'image/webp'],
   },
   experimental: {
