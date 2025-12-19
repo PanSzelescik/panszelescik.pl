@@ -7,8 +7,13 @@ body {
             linear-gradient(to right, color-mix(in srgb, var(--color-neutral-900) 10%, transparent) 1px, transparent 1px),
             linear-gradient(to bottom, color-mix(in srgb, var(--color-neutral-900) 10%, transparent) 1px, transparent 1px);
 
-    background-size: 36px 36px;
-    animation: moveGrid 4s linear infinite;
+    background-size: 18px 18px;
+    animation: moveGridLight 4s linear infinite;
+}
+
+@keyframes moveGridLight {
+    0% { background-position: 0 0; }
+    100% { background-position: 18px 18px; }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +23,13 @@ body {
         background-image:
                 linear-gradient(to right, color-mix(in srgb, var(--color-neutral-200) 10%, transparent) 1px, transparent 1px),
                 linear-gradient(to bottom, color-mix(in srgb, var(--color-neutral-200) 10%, transparent) 1px, transparent 1px);
+
+        background-size: 36px 36px;
+        animation: moveGridDark 4s linear infinite;
     }
 }
 
-@keyframes moveGrid {
+@keyframes moveGridDark {
     0% { background-position: 0 0; }
     100% { background-position: 36px 36px; }
 }
