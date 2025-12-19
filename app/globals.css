@@ -1,13 +1,33 @@
 @import "tailwindcss";
 
 body {
-    background: var(--color-neutral-200);
     color: var(--color-neutral-900);
+    background-color: var(--color-neutral-200);
+    background-image:
+            linear-gradient(to right, color-mix(in srgb, var(--color-neutral-900) 10%, transparent) 1px, transparent 1px),
+            linear-gradient(to bottom, color-mix(in srgb, var(--color-neutral-900) 10%, transparent) 1px, transparent 1px);
+
+    background-size: 36px 36px;
+    animation: moveGrid 4s linear infinite;
 }
 
 @media (prefers-color-scheme: dark) {
     body {
-        background: var(--color-neutral-900);
         color: var(--color-neutral-200);
+        background-color: var(--color-neutral-900);
+        background-image:
+                linear-gradient(to right, color-mix(in srgb, var(--color-neutral-200) 10%, transparent) 1px, transparent 1px),
+                linear-gradient(to bottom, color-mix(in srgb, var(--color-neutral-200) 10%, transparent) 1px, transparent 1px);
+    }
+}
+
+@keyframes moveGrid {
+    0% { background-position: 0 0; }
+    100% { background-position: 36px 36px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .grid-bg {
+        animation: none;
     }
 }
