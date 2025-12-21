@@ -9,15 +9,6 @@ const dateFormatter = new Intl.DateTimeFormat("pl-PL", {
 });
 
 const niedzieleHandlowe = [
-  new Date("2025-01-26"),
-  new Date("2025-04-13"),
-  new Date("2025-04-27"),
-  new Date("2025-06-29"),
-  new Date("2025-08-31"),
-  new Date("2025-12-07"),
-  new Date("2025-12-14"),
-  new Date("2025-12-21"),
-
   new Date("2026-01-25"),
   new Date("2026-03-29"),
   new Date("2026-04-26"),
