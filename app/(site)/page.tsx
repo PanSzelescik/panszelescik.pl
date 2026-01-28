@@ -6,22 +6,22 @@ const externalLinks = [
   {
     name: "BedrockHost.pl",
     url: "https://bedrockhost.pl/?utm_source=panszelescik.pl&utm_medium=website&utm_campaign=homepage_links",
-    icon: "https://bedrockhost.pl/assets-static/favicon/bedrockhost-v2.svg",
+    icon: "/images/bedrockhost.svg",
   },
   {
     name: "Serwery-Minecraft.pl",
     url: "https://serwery-minecraft.pl/?utm_source=panszelescik.pl&utm_medium=website&utm_campaign=homepage_links",
-    icon: "/serwery-minecraft.webp",
+    icon: "/images/serwery-minecraft.webp",
   },
   {
     name: "Minecraft-Servers.gg",
     url: "https://minecraft-servers.gg/?utm_source=panszelescik.pl&utm_medium=website&utm_campaign=homepage_links",
-    icon: "/minecraft-servers.webp",
+    icon: "/images/minecraft-servers.webp",
   },
   {
     name: "Serwery-Hytale.pl",
     url: "https://serwery-hytale.pl/?utm_source=panszelescik.pl&utm_medium=website&utm_campaign=homepage_links",
-    icon: "https://serwery-hytale.pl/images/logo-128.png",
+    icon: "/images/serwery-hytale.png",
   },
 ];
 
