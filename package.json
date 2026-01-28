@@ -11,7 +11,9 @@
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts"
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
+    "update-docs": "pnpx @next/codemod@canary agents-md",
+    "install-skills": "pnpx skills add vercel-labs/next-skills"
   },
   "dependencies": {
     "@microsoft/clarity": "^1.0.2",
