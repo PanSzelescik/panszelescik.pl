@@ -8,7 +8,7 @@ import link from "@/app/lib/link";
 
 const url = new URL(link("niedziela-handlowa"));
 
-export async function generateMetadata(): Promise<Metadata> {
+export function generateMetadata(): Metadata {
   const nextNiedzielaHandlowa = getNextNiedzielaHandlowa() || new Date();
   const year = nextNiedzielaHandlowa.getFullYear();
 

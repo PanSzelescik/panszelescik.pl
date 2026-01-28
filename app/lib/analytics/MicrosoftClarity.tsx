@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export default function MicrosoftClarity() {
   useEffect(() => {
     const clarityId = process.env.NEXT_PUBLIC_CLARITY_ID;
-    if (typeof window !== "undefined" && clarityId) {
+    if (clarityId) {
       Clarity.init(clarityId);
     }
   }, []);
