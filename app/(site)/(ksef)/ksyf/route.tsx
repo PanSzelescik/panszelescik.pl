@@ -1,7 +1,5 @@
 import KsefImageResponse from "@/app/(site)/(ksef)/KsefImageResponse";
 
-export const runtime = "edge";
-
-export async function GET() {
-  return KsefImageResponse({ letter: "y" });
+export async function GET(request: Request) {
+  return KsefImageResponse({ letter: "y", requestUrl: request.url });
 }
