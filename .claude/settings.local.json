@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:developers.cloudflare.com)",
+      "Bash(curl:*)",
+      "WebFetch(domain:bedrockhost.pl)",
+      "WebFetch(domain:serwery-minecraft.pl)",
+      "WebFetch(domain:minecraft-servers.gg)",
+      "WebFetch(domain:serwery-hytale.pl)",
+      "Bash(tree:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
