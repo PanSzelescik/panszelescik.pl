@@ -42,25 +42,11 @@
             "bucket_name": "panszelescik"
         }
     ],
-    "kv_namespaces": [
-        {
-            "binding": "NEXT_INC_CACHE_KV",
-            "id": "506aa1a24d7e41cb9ec6ca43bb55153c"
-        }
-    ],
     "durable_objects": {
         "bindings": [
             {
                 "name": "NEXT_CACHE_DO_QUEUE",
                 "class_name": "DOQueueHandler"
-            },
-            {
-                "name": "NEXT_TAG_CACHE_DO_SHARDED",
-                "class_name": "DOShardedTagCache"
-            },
-            {
-                "name": "NEXT_CACHE_DO_PURGE",
-                "class_name": "BucketCachePurge"
             }
         ]
     },

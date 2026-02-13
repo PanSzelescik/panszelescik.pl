@@ -10,7 +10,8 @@
       "WebFetch(domain:serwery-hytale.pl)",
       "Bash(tree:*)",
       "Bash(ls:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ],
     "deny": [],
     "ask": []
