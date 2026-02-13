@@ -3,7 +3,7 @@
     "main": ".open-next/worker.js",
     "name": "panszelescik",
     "account_id": "6417f910b3362768cc8706ae524445af",
-    "compatibility_date": "2026-02-12",
+    "compatibility_date": "2026-02-13",
     "compatibility_flags": [
         "nodejs_compat",
         "global_fetch_strictly_public"

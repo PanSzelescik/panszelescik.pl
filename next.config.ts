@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
   images: {
     loader: "custom",
     loaderFile: "./image-loader.ts",
-    formats: ['image/avif', 'image/webp'],
+    formats: ["image/avif", "image/webp"],
   },
   experimental: {
     turbopackFileSystemCacheForDev: true,

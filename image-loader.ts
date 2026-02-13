@@ -13,10 +13,16 @@ export default function cloudflareImageLoader({
   quality?: number;
   format?: "auto" | "avif" | "webp" | "jpeg" | "baseline-jpeg" | "json";
 }) {
+  const params = [
+    `width=${width}`,
+    `quality=${quality || 75}`,
+    `format=${format || "auto"}`,
+    "onerror=redirect",
+  ];
   if (process.env.NODE_ENV === "development") {
-    return src;
+    // Serve the original image when using `next dev`
+    return `${src}?${params.join("&")}`;
   }
-  const params = [`width=${width}`, `quality=${quality || 75}`, `format=${format || "auto"}`, "onerror=redirect"];
   const paramsString = params.join(",");
   return `/cdn-cgi/image/${paramsString}/${normalizeSrc(src)}`;
 }

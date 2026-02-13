@@ -45,8 +45,10 @@ next-env.d.ts
 certificates
 cloudflare-env.d.ts
 # next-agents-md
-.next-docs/
 .agents
-.claude/skills/next-best-practices
-.claude/skills/next-cache-components
-.claude/skills/next-upgrades
+.claude
+.github
+.idea
+.next
+.next-docs
+.open-next

@@ -41,7 +41,7 @@ export default function Home() {
           <h1 className="text-4xl font-bold">PanSzelescik</h1>
         </div>
       </main>
-      <footer className="absolute bottom-0 left-0 right-0 flex flex-wrap items-center justify-center gap-4 p-4">
+      <footer className="absolute right-0 bottom-0 left-0 flex flex-wrap items-center justify-center gap-4 p-4">
         {externalLinks.map((link) => (
           <a
             key={link.name}

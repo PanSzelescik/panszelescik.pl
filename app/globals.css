@@ -1,41 +1,65 @@
 @import "tailwindcss";
 
 body {
-    color: var(--color-neutral-900);
-    background-color: var(--color-neutral-200);
-    background-image:
-            linear-gradient(to right, color-mix(in srgb, var(--color-neutral-900) 10%, transparent) 1px, transparent 1px),
-            linear-gradient(to bottom, color-mix(in srgb, var(--color-neutral-900) 10%, transparent) 1px, transparent 1px);
+  color: var(--color-neutral-900);
+  background-color: var(--color-neutral-200);
+  background-image:
+    linear-gradient(
+      to right,
+      color-mix(in srgb, var(--color-neutral-900) 10%, transparent) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--color-neutral-900) 10%, transparent) 1px,
+      transparent 1px
+    );
 
-    background-size: 18px 18px;
-    animation: moveGridLight 4s linear infinite;
+  background-size: 18px 18px;
+  animation: moveGridLight 4s linear infinite;
 }
 
 @keyframes moveGridLight {
-    0% { background-position: 0 0; }
-    100% { background-position: 18px 18px; }
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 18px 18px;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        color: var(--color-neutral-200);
-        background-color: var(--color-neutral-900);
-        background-image:
-                linear-gradient(to right, color-mix(in srgb, var(--color-neutral-200) 10%, transparent) 1px, transparent 1px),
-                linear-gradient(to bottom, color-mix(in srgb, var(--color-neutral-200) 10%, transparent) 1px, transparent 1px);
+  body {
+    color: var(--color-neutral-200);
+    background-color: var(--color-neutral-900);
+    background-image:
+      linear-gradient(
+        to right,
+        color-mix(in srgb, var(--color-neutral-200) 10%, transparent) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        color-mix(in srgb, var(--color-neutral-200) 10%, transparent) 1px,
+        transparent 1px
+      );
 
-        background-size: 36px 36px;
-        animation: moveGridDark 4s linear infinite;
-    }
+    background-size: 36px 36px;
+    animation: moveGridDark 4s linear infinite;
+  }
 }
 
 @keyframes moveGridDark {
-    0% { background-position: 0 0; }
-    100% { background-position: 36px 36px; }
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 36px 36px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .grid-bg {
-        animation: none;
-    }
+  .grid-bg {
+    animation: none;
+  }
 }

@@ -1,4 +1,12 @@
 # Ignore artifacts:
 build
 coverage
+.agents
+.claude
 .github
+.idea
+.next
+.next-docs
+.open-next
+.wrangler
+certificates
