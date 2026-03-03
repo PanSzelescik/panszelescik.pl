@@ -11,7 +11,8 @@
       "Bash(tree:*)",
       "Bash(ls:*)",
       "Bash(find:*)",
-      "WebFetch(domain:raw.githubusercontent.com)"
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:opennext.js.org)"
     ],
     "deny": [],
     "ask": []

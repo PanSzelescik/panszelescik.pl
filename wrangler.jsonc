@@ -25,7 +25,11 @@
     ],
     "observability": {
         "enabled": true,
-        "head_sampling_rate": 1
+        "head_sampling_rate": 1,
+        "traces": {
+            "enabled": true,
+            "head_sampling_rate": 1
+        }
     },
     "placement": {
         "mode": "smart"
@@ -36,10 +40,10 @@
             "service": "panszelescik"
         }
     ],
-    "r2_buckets": [
+    "kv_namespaces": [
         {
-            "binding": "NEXT_INC_CACHE_R2_BUCKET",
-            "bucket_name": "panszelescik"
+            "binding": "NEXT_INC_CACHE_KV",
+            "id": "2cd4b4bba2ec4172a450b08c5d472406"
         }
     ],
     "durable_objects": {
