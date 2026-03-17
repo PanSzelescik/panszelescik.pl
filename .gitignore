@@ -51,4 +51,4 @@ cloudflare-env.d.ts
 .idea
 .next
 .next-docs
-.open-next
+/dist/

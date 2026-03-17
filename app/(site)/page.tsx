@@ -30,7 +30,7 @@ export default function Home() {
     <div className="relative flex min-h-dvh flex-col items-center justify-center p-8 pb-40">
       <main className="flex flex-col items-center gap-8 sm:flex-row">
         <Image
-          src="/icon.png"
+          src="/images/icon.png"
           alt="PanSzelescik"
           width={256}
           height={256}

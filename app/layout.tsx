@@ -4,17 +4,10 @@ import type { Metadata, Viewport } from "next";
 import { Nunito } from "next/font/google";
 import type { ReactNode } from "react";
 import Analytics from "@/app/lib/analytics/Analytics";
-import NextTopLoader from "nextjs-toploader";
+import NextTopLoader from "@/app/lib/TopLoader";
 import link from "@/app/lib/link";
-import cloudflareImageLoader from "@/image-loader";
-
 const url = new URL(link("/"));
-const iconUrl = link(
-  cloudflareImageLoader({
-    src: "icon.png",
-    width: 512,
-  }),
-);
+const iconUrl = link("/images/icon.png");
 
 const nunito = Nunito({
   subsets: ["latin"],

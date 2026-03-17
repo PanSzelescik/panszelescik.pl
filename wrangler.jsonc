@@ -1,15 +1,14 @@
 {
     "$schema": "./node_modules/wrangler/config-schema.json",
-    "main": ".open-next/worker.js",
     "name": "panszelescik",
     "account_id": "6417f910b3362768cc8706ae524445af",
-    "compatibility_date": "2026-02-13",
+    "compatibility_date": "2026-02-17",
     "compatibility_flags": [
         "nodejs_compat",
         "global_fetch_strictly_public"
     ],
     "assets": {
-        "directory": ".open-next/assets",
+        "directory": "./dist/client",
         "binding": "ASSETS"
     },
     "images": {
@@ -33,47 +32,5 @@
     },
     "placement": {
         "mode": "smart"
-    },
-    "services": [
-        {
-            "binding": "WORKER_SELF_REFERENCE",
-            "service": "panszelescik"
-        }
-    ],
-    "kv_namespaces": [
-        {
-            "binding": "NEXT_INC_CACHE_KV",
-            "id": "2cd4b4bba2ec4172a450b08c5d472406"
-        }
-    ],
-    "durable_objects": {
-        "bindings": [
-            {
-                "name": "NEXT_CACHE_DO_QUEUE",
-                "class_name": "DOQueueHandler"
-            }
-        ]
-    },
-    "migrations": [
-        {
-            "tag": "v1",
-            "new_sqlite_classes": [
-                "DOQueueHandler"
-            ]
-        },
-        {
-            "tag": "v2",
-            "new_sqlite_classes": [
-                "DOShardedTagCache",
-                "BucketCachePurge"
-            ]
-        }
-    ],
-    "d1_databases": [
-        {
-            "binding": "NEXT_TAG_CACHE_D1",
-            "database_id": "bf157538-286d-4fba-98f5-7ce7c289ca49",
-            "database_name": "panszelescik"
-        }
-    ]
+    }
 }

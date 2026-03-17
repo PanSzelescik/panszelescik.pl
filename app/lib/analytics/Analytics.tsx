@@ -1,4 +1,4 @@
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@/app/lib/analytics/GoogleAnalyticsWrapper";
 import MicrosoftClarity from "@/app/lib/analytics/MicrosoftClarity";
 
 export default function Analytics() {
