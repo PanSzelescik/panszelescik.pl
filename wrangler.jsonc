@@ -8,8 +8,7 @@
         "global_fetch_strictly_public"
     ],
     "assets": {
-        "directory": "./dist/client",
-        "binding": "ASSETS"
+        "directory": "./dist/client"
     },
     "images": {
         "binding": "IMAGES"
