@@ -1,9 +1,7 @@
 # https://developers.cloudflare.com/workers/static-assets/headers
-/_next/static/*
-  Cache-Control: public,max-age=31536000,immutable
 /assets/*
   Cache-Control: public,max-age=31536000,immutable
 /images/*
   Cache-Control: public,max-age=31536000,immutable
-/icon.png
+/fonts/*
   Cache-Control: public,max-age=31536000,immutable

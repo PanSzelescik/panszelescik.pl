@@ -11,6 +11,11 @@
       "sourceType": "github",
       "computedHash": "c31ddd68ba5798a79a516c619b1e1fc4408cc4876ad600fefa4f5add4425719d"
     },
+    "next-browser": {
+      "source": "vercel-labs/next-browser",
+      "sourceType": "github",
+      "computedHash": "875c1c4238e23ad3a02dd30d1c1b82e1e3610583e616d4ac25667d48aaab337e"
+    },
     "next-cache-components": {
       "source": "vercel-labs/next-skills",
       "sourceType": "github",
