@@ -36,11 +36,18 @@ interface ExecutionContext {
 
 export default {
   async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+    const url = new URL(request.url);
+    if (url.port === "2083") {
+      return new Response("Not Found", {
+        status: 404,
+        headers: { "Content-Type": "text/plain" },
+      });
+    }
+
     // Wire up KV-backed ISR cache. The vinext RSC entry automatically
     // registers ctx in ALS so background KV puts use waitUntil — without
     // this every request would return MISS.
     setCacheHandler(new KVCacheHandler(env.VINEXT_CACHE));
-    const url = new URL(request.url);
 
     // Image optimization via Cloudflare Images binding.
     // The parseImageParams validation inside handleImageOptimization
