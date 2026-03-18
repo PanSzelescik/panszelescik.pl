@@ -33,5 +33,11 @@
     },
     "placement": {
         "mode": "smart"
-    }
+    },
+    "kv_namespaces": [
+        {
+            "binding": "VINEXT_CACHE",
+            "id": "2cd4b4bba2ec4172a450b08c5d472406"
+        }
+    ]
 }
