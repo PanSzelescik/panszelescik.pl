@@ -41,7 +41,7 @@
     "react-server-dom-webpack": "^19.2.4",
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",
-    "vinext": "^0.0.34",
+    "vinext": "^0.0.35",
     "vite": "^8.0.1",
     "wrangler": "^4.76.0"
   },
